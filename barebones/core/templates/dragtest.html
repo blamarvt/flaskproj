@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <link href="static/css/drag.css" rel="stylesheet">
+    <script type=text/javascript>
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+{% endblock %}
+
+{% block content %}
+
+
+<div clas="row">
+
+
+<div id="trash" class="out dropzone span2">
+    <span>Trash</span>
+    <div class="trashcontent"></div>
+</div>
+
+<div id="trash" class="out dropzone span2 offset2">
+    <span>Trash 2</span>
+    <div class="trashcontent"></div>
+</div>
+
+<div id="items span2 offset4">
+    <div class="dragitem">
+        <span>Item 1</span>
+    </div>
+    <div class="dragitem">
+        <span>Item 2</span>
+    </div>
+    <div class="dragitem">
+        <span>Item 3</span>
+    </div>
+</div>
+</div>  
+{% endblock %} span1

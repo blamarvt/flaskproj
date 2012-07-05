@@ -1,0 +1,45 @@
+.dragitem {
+        background: #cdcdcd;
+        color: #3b3b3b;
+        float: left;
+        margin: 10px;
+
+}
+
+.shadow {
+    -moz-box-shadow:    2px 2px 4px 0px #888;
+    -webkit-box-shadow: 2px 2px 4px 0px #888;
+    box-shadow:         2px 2px 4px 0px #888;
+}
+
+span {
+        float: left;
+        margin-top: 17px;
+        text-align: center;
+        width: 100%;
+}
+
+#items, .dragitem {
+        height: 50px;
+        width: 50px;
+}
+ 
+#trash {
+        color: #354e62;
+}
+ 
+#items {
+       margin-top: 10px;
+       width: 100%;
+}
+
+.over {
+    border-style: dashed;
+    border-width: 1px;
+    padding: 0px;
+}
+
+.out {
+    border-style: none;
+    padding: 1px;
+}
