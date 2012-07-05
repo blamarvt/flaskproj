@@ -1,6 +1,6 @@
 from flask import Blueprint
-import medphoto
+import barebones
 
-bp = Blueprint('core', 'medphoto', template_folder='core/templates')
+bp = Blueprint('core', 'barebones', template_folder='core/templates')
 import views.login_view
 
