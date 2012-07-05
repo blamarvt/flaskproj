@@ -1,4 +1,9 @@
 flask-barebone
 ==============
 
-bare bone flask app blueprints/orm/authentication/bootstrap
+a bare bone flask application
+uses:
+sqlalchemy
+wtforms
+flask-principal
+twitter bootstrap
