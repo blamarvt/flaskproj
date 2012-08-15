@@ -1,4 +1,4 @@
-import medphoto
+import barebones
 
-app = medphoto.create_app()
+app = barebones.create_app()
 app.run()

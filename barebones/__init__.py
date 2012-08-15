@@ -8,7 +8,7 @@ import core
 from core.models.user import User
 
 
-root_blueprint = Blueprint('root', 'barebone', url_prefix='/')
+root_blueprint = Blueprint('root', 'barebones', url_prefix='/')
 
 
 @root_blueprint.route('/')
