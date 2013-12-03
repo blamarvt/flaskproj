@@ -1,9 +1,14 @@
-flaskproj
-=========
+## flaskproj
 
-make venv
-make test
+### Working Commands
+    make venv
 
-make config
-make db
-make docs
+    make test
+
+
+### Non-working Commands
+    make config
+
+    make db
+
+    make docs
