@@ -1,19 +1,28 @@
-.PHONY: venv update-pip update-deps hello clean
+.PHONY: venv venv-update test run clean
 
 SHELL := /bin/bash
 
-venv:
+ifeq ($(wildcard .venv),)
+venv: venv-create venv-update
+venv-create:
 	virtualenv .venv
+else
+venv:
+endif
 
-update-pip:
+venv-update: venv
 	source .venv/bin/activate && \
-	.venv/bin/pip install -U pip
+	pip install -U pip && \
+	pip install -U -r requirements.txt && \
+	pip install -U -r test-requirements.txt
 
-update-deps:
+test: venv
 	source .venv/bin/activate && \
-	.venv/bin/pip install -U -r requirements.txt
+	nosetests
 
-hello: venv update-pip update-deps
+run: venv
+	source .venv/bin/activate && \
+	python manage.py run
 
 clean:
 	rm -rf .venv

@@ -1,3 +1,0 @@
-SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
-SQLALCHEMY_ECHO = True
-DEBUG = True
