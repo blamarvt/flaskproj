@@ -1,5 +1,7 @@
 ## flaskproj
 
+This is a seriously basic but hopefully (eventually) complete app to get started quickly with Flask.
+
 ### Create Your Virtual Environment
     make venv
 
@@ -22,3 +24,9 @@ Creates tables, indicies, and any other datastructures necessary to run this pro
     make docs (Not Yet Implemented)
     
 Generate documentation and ideally publish it locally or remotely (depending on configuration settings).
+
+
+### Install Permanently
+    make install (Not Yet Implemented)
+    
+Use Puppet (http://puppetlabs.com/) to install and configure this app based on configuration options.
