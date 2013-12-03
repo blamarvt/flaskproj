@@ -1,9 +1,9 @@
-flask-barebone
-==============
+flaskproj
+=========
 
-a bare bone flask application
-uses:
-sqlalchemy
-wtforms
-flask-principal
-twitter bootstrap
+make venv
+make test
+
+make config
+make db
+make docs
